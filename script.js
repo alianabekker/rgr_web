@@ -34,7 +34,8 @@ axios.get(url).then(res => {
  if (res.data.main.humidity>75){  //дождь
    // text = '<img src="run.png">'
    document.body.style.backgroundSize = 'cover';
-    document.body.style.backgroundImage= "url(SFFd.gif)";
+   document.body.style.backgroundImage= "url('./img/SFFd.gif')";
+    //document.body.style.backgroundImage= "url(SFFd.gif)";
     document.getElementById("weat-id").style.color = 'white';
     document.getElementById("ab").style.color = 'white';
    
@@ -46,7 +47,7 @@ axios.get(url).then(res => {
     //text = '<img src="original.gif">'
     document.body.style.backgroundSize = 'cover';
 
-    document.body.style.backgroundImage= "url(IsX.gif)";
+    document.body.style.backgroundImage= "url('./img/IsX.gif')";
     document.getElementById("ab").style.color = 'black';
     document.getElementById("weat-id").style.color = 'black';
 
@@ -56,7 +57,7 @@ axios.get(url).then(res => {
  if (res.data.main.humidity<=75&&res.data.main.temp<=13){ //облачно
     //text = '<img src="sunobl.jpg">'
     document.body.style.backgroundSize = 'cover';
-    document.body.style.backgroundImage= "url(original.gif)";
+    document.body.style.backgroundImage= "url('./img/original.gif')";
     
     document.getElementById("weat-id").style.color = 'black';
     document.getElementById("ab").style.color = 'black';
@@ -66,7 +67,7 @@ axios.get(url).then(res => {
     //text = '<img src="veter.png">'
    // document.body.style.backgroundImage= "url(1twc.gif)";
    document.body.style.backgroundSize = 'cover';
-    document.body.style.backgroundImage= "url(gifgivecom.gif)";
+    document.body.style.backgroundImage= "url('./img/gifgivecom.gif')";
     document.getElementById("weat-id").style.color = 'white';
     document.getElementById("ab").style.color = 'white';
     
